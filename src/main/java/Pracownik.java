@@ -1,10 +1,10 @@
 public class Pracownik {
 
-    String imie;
-    String nazwisko;
-    Double pesel;
-    int wiek;
-    int zarobki;
+    private String imie;
+    private String nazwisko;
+    private Double pesel;
+    private int wiek;
+    private int zarobki;
 
     @Override
     public String toString() {

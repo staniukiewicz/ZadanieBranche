@@ -1,44 +1,35 @@
 public class Produkt {
-    String nazwa;
-    Double cenaNetto;
-    Double podatekVAT;
+    private String name;
+    private double price;
+    private double tax;
 
-    @Override
-    public String toString() {
-        return "Produkt{" +
-                "nazwa='" + nazwa + '\'' +
-                ", cenaNetto=" + cenaNetto +
-                ", podatekVAT=" + podatekVAT +
-                '}';
+    public Produkt(String name, double price, double tax) {
+        this.name = name;
+        this.price = price;
+        this.tax = tax;
     }
 
-    public String getNazwa() {
-        return nazwa;
+    public String getName() {
+        return name;
     }
 
-    public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Double getCenaNetto() {
-        return cenaNetto;
+    public double getPrice() {
+        return price;
     }
 
-    public void setCenaNetto(Double cenaNetto) {
-        this.cenaNetto = cenaNetto;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public Double getPodatekVAT() {
-        return podatekVAT;
+    public double getTax() {
+        return tax;
     }
 
-    public void setPodatekVAT(Double podatekVAT) {
-        this.podatekVAT = podatekVAT;
-    }
-
-    public Produkt(String nazwa, Double cenaNetto, Double podatekVAT) {
-        this.nazwa = nazwa;
-        this.cenaNetto = cenaNetto;
-        this.podatekVAT = podatekVAT;
+    public void setTax(double tax) {
+        this.tax = tax;
     }
 }
