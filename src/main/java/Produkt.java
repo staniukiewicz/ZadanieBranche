@@ -1,7 +1,7 @@
 public class Produkt {
-    String nazwa;
-    Double cenaNetto;
-    Double podatekVAT;
+    private String nazwa;
+    private Double cenaNetto;
+    private Double podatekVAT;
 
     @Override
     public String toString() {

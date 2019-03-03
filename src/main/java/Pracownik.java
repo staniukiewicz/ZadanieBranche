@@ -1,67 +1,68 @@
+import com.sun.org.apache.xpath.internal.operations.String;
+
 public class Pracownik {
+    private String firstName;
+    private String lastName;
+    private String pesel;
+    private int age;
+    private double salary;
 
-    String imie;
-    String nazwisko;
-    Double pesel;
-    int wiek;
-    int zarobki;
-
-    @Override
-    public String toString() {
-        return "Pracownik{" +
-                "imie='" + imie + '\'' +
-                ", nazwisko='" + nazwisko + '\'' +
-                ", pesel=" + pesel +
-                ", wiek=" + wiek +
-                ", zarobki=" + zarobki +
-                '}';
+    public Pracownik(String firstName, String lastName, String pesel, int age, double salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.pesel = pesel;
+        this.age = age;
+        this.salary = salary;
     }
 
-    public String getImie() {
-        return imie;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setImie(String imie) {
-        this.imie = imie;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getNazwisko() {
-        return nazwisko;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setNazwisko(String nazwisko) {
-        this.nazwisko = nazwisko;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public Double getPesel() {
+    public String getPesel() {
         return pesel;
     }
 
-    public void setPesel(Double pesel) {
+    public void setPesel(String pesel) {
         this.pesel = pesel;
     }
 
-    public int getWiek() {
-        return wiek;
+    public int getAge() {
+        return age;
     }
 
-    public void setWiek(int wiek) {
-        this.wiek = wiek;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public int getZarobki() {
-        return zarobki;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setZarobki(int zarobki) {
-        this.zarobki = zarobki;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
-    public Pracownik(String imie, String nazwisko, Double pesel, int wiek, int zarobki) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.pesel = pesel;
-        this.wiek = wiek;
-        this.zarobki = zarobki;
+    @Override
+    public java.lang.String toString() {
+        return "Pracownik{" +
+                "firstName=" + firstName +
+                ", lastName=" + lastName +
+                ", pesel=" + pesel +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
     }
 }
